@@ -1,4 +1,4 @@
-## Vastaus
+## 1.6 Answer
 
 Command to build new *docker-cloc*k image from *dockerfile*  
 
