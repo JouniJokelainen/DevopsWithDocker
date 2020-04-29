@@ -6,3 +6,6 @@ Running container named *curler* from image *curler:latest*
 
 *Dockerfile* used for the image  
 [Dockerfile](dockerfile)
+
+*Script used*  
+[curler.sh](curler.sh)
