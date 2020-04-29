@@ -1,4 +1,4 @@
-![](images/1.1.png)
+![](1.1.jpg)
 
 <img src="images/1.1.png" />
 
