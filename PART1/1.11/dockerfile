@@ -1,0 +1,36 @@
+# Base image
+FROM ubuntu:latest
+
+# Do update and install curl
+RUN apt-get update && apt-get install -y curl python
+# RUN apt-get update && apt-get install -y curl
+
+# Install Node
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt install -y nodejs
+
+# Set working directory
+WORKDIR /backend
+
+# Use relative path in relation where dockerfile is
+COPY ./backend-example-docker-master /backend
+
+# Mita tama tekee?-taitaa kopioida kaiken paikallisesta konttiin
+# COPY ..
+
+# Install packages and depencies...3.5.2020
+RUN npm install
+
+# Expose port 5000...tämä testattava
+EXPOSE 8000
+
+# Build and server in production mode in folder /dist and publish in port 5000
+# CMD npm start
+
+# tai em. vaihtoehtoisesti
+ENTRYPOINT npm start
+
+
+
+# Run application...lieko valttamaton
+# CMD node index.js
