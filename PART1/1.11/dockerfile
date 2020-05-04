@@ -1,0 +1,17 @@
+# Base image
+FROM node:latest
+
+# Set working directory
+WORKDIR /backend
+
+# Copy project file to working directory
+COPY ./backend-example-docker-master /backend
+
+# Install packages and depencies
+RUN npm install
+
+# Expose port 5000
+EXPOSE 8000
+
+# Build and server in production mode in folder /dist
+ENTRYPOINT npm start
