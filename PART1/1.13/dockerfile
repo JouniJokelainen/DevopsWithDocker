@@ -1,0 +1,17 @@
+# Set baseimage
+FROM openjdk:8
+
+# Copy project to container
+COPY ./spring-example-project-master /usr/src/myapp/
+
+# Set workdir
+WORKDIR /usr/src/myapp
+
+# Build from maven package
+RUN ./mvnw package
+
+# Expose port 8080
+EXPOSE 8080
+
+# Run project
+ENTRYPOINT ["java", "-jar", "./target/docker-example-1.1.3.jar"]
