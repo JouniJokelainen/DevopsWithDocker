@@ -1,0 +1,17 @@
+# Set Base image
+FROM node:latest
+
+# Create and set working directory for app
+WORKDIR /usr/src/wikiapp
+
+RUN apt update
+
+# Install packages and depencies
+COPY ./wikiapp/package*.json ./
+RUN npm install
+
+# Copy app files to working directory
+COPY ./wikiapp .
+
+# Set entrypoint for container
+ENTRYPOINT ["node", "wiki.js"]
