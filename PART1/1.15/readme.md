@@ -1,4 +1,4 @@
-## Wikiapp
+## Task 1.15: Wikiapp
 
 Sample node app for searching information from wikipedia based given criteria 
 https://hub.docker.com/r/jounijokelainen/wikiapp
