@@ -1,0 +1,28 @@
+FROM ruby:2.6.0
+
+# Set working directory
+WORKDIR /rubyclicker
+
+# Copy project file to working directory
+COPY ./rails-example-project-master .
+
+# Do update and install curl
+RUN apt update && apt install -y curl
+
+# Install node
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && apt install -y nodejs && npm install
+
+# Install packages and depencies
+RUN npm install
+
+# Install bundler
+RUN bundle install
+
+# Expose port 3000
+EXPOSE 3000
+
+# Run migrations in development mode
+RUN rails db:migrate
+
+# Start program development mode
+ENTRYPOINT rails s
