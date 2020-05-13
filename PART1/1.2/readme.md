@@ -1,3 +1,3 @@
-## 1.2 Answer
+## Task 1.2
 
 ![task1.1](/images/1.2.jpg)
