@@ -1,4 +1,4 @@
-## 1.6 Answer
+## Task 1.6  
 
 Command to build new *docker-cloc*k image from *dockerfile*  
 
