@@ -1,4 +1,4 @@
-## 1.5 Answer
+## Task 1.5 
 
 A) How to start container with interactive sh process  
 `docker run -it -rm --name 1.5 ubuntu:16.04 sh ´echo "Website?"; read website; echo "Searching.."; sleep 1; curl http://$website;´`
