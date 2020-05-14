@@ -90,7 +90,7 @@ To start backend container with logs.txt on local filesystem using bindmount
 [dockerfile](./1.10/dockerfile)  
 ___________________________________
 **Task 1.11:**  
-To start backend container with logs.txt on local filesystem using bindmount  
+To start backend container with logs.txt on local filesystem using bindmount    
 `docker run --name 1.11 -it --rm -v ${pwd}/logs.txt:/backend/logs.txt -p 8000:8000 devops-be-node`  
 [dockerfile](./1.11/dockerfile)  
 ___________________________________
