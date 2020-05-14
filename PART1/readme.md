@@ -85,14 +85,14 @@ Start a container named 1.9, publish localport 8080 and map it to port 80 in con
 __________________________________
 **Task 1.10:**  
 To start backend container with logs.txt on local filesystem using bindmount  
-`docker run --name 1.11 -it --rm -v ${pwd}/logs.txt:/backend/logs.txt -p 8000:8000 devops-be-node`
+`docker run --name 1.11 -it --rm -v ${pwd}/logs.txt:/backend/logs.txt -p 8000:8000 devops-be-node`  
 
-[dockerfile](./1.10/dockerfile)
+[dockerfile](./1.10/dockerfile)  
 ___________________________________
 **Task 1.11:**  
 To start backend container with logs.txt on local filesystem using bindmount  
 `docker run --name 1.11 -it --rm -v ${pwd}/logs.txt:/backend/logs.txt -p 8000:8000 devops-be-node`  
-[dockerfile](./1.11/dockerfile)
+[dockerfile](./1.11/dockerfile)  
 ___________________________________
 **Task 1.12:**  
 
@@ -104,8 +104,8 @@ To start Frontend container
 To start Backend container  
 `docker run --name 1.12be -it -v ${pwd}/logs.txt:/backend/logs.txt -p 8000:8000 devops-be-node` 
 
-[backend dockerfile](./1.10/backend/dockerfile)  
-[frontend dockerfile](./1.10/frontend/dockerfile) 
+[backend dockerfile](./1.12/backend/dockerfile)  
+[frontend dockerfile](./1.12/frontend/dockerfile) 
 ___________________________________
 **Task 1.13:**  
 
