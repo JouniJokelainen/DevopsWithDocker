@@ -1,5 +1,8 @@
 ## PART 1
 
+![dockerfile](./1.6/dockerfile)
+
+
 **Task 1.1:**  
   
 ![task1.1](/images/1.1.png)
@@ -47,7 +50,7 @@ Content of dockerfile
 `# Pass -C flag to index.js`  
 `CMD ["--clock"]`  
 
-![dockerfile](DevopsWithDocker/PART1/1.6/dockerfile)
+![dockerfile](1.6/dockerfile)
 
 
 **Task 1.7:**
