@@ -47,7 +47,7 @@ Content of dockerfile
 `# Pass -C flag to index.js`  
 `CMD ["--clock"]`  
 
-![dockerfile](PART1/1.6/dockerfile)
+![dockerfile](DevopsWithDocker/PART1/1.6/dockerfile)
 
 
 **Task 1.7:**
