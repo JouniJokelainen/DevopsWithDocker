@@ -11,9 +11,13 @@ ______________________
 ________________________
 **Task 1.3:**  
 
-![task1.1](/images/1.3.jpg)  
+Secret message is: "This is the secret message"   
+
+![task1.1](/images/1.3.jpg)      
 ________________________
-**Task 1.4:**
+**Task 1.4:**  
+
+Secret message is: "Docker is easy"
 
 ![task1.1](/images/1.4.jpg)  
 _________________________
@@ -38,7 +42,7 @@ B2. `apt-get install curl wget -y`
 ___________________________
 **Task 1.6:**
 
-Command to build new *docker-cloc*k image from *dockerfile*  
+Command to build and run a new *docker-cloc*k image from *dockerfile*  
 
 `docker build -t docker-clock .`  
 
@@ -68,7 +72,7 @@ Running container named *curler* from image *curler:latest*
 ___________________________________
 **Task 1.8:**  
 
-To create logs.txt file to local system  
+To create logs.txt file to local filesystem  
 `touch ./logs.txt`  
 
 To start a container named 1.8 and create a bind mount to current working directory for /usr/app/logs.txt inside container   
@@ -80,7 +84,7 @@ ____________________________________
 Pull dockerimage to local machine  
 `docker pull devopsdockeruh/ports_exercise`  
 
-Start a container named 1.9, publish localport 8080 and map it to port 80 in container    
+Start a container named 1.9, publish it to localport 8080 and map it to port 80 inside container    
 `docker run --name 1.9 -it --rm -p 8080:80 devopsdockeruh/ports_exercise`  
 __________________________________
 **Task 1.10:**  
@@ -145,6 +149,8 @@ _____________________________________
 
 Heroku App released at  
 https://php-devops.herokuapp.com/  
+  
+NOTE: I originally named it as php-devops becouse i somehow thought i have to publish my own app and thought of php app. Only after i realized that i only need to publish prebuilt image to heroku. I hope missleading name is not a bin no no .
 _____________________________________
 **Task 1.17:**  
 
