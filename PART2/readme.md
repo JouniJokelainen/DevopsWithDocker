@@ -4,7 +4,7 @@
 
 Create a docker-compose.yml file that starts *devopsdockeruh/first_volume_exercise* and saves the logs into your filesystem.  
 
-[dockerfile](./2.1/dockerfile)  
+[docker-compose.yml](./2.1/docker-compose.yml)  
 
 ____________________________________
 
