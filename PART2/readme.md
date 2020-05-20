@@ -10,6 +10,9 @@ ____________________________________
 
 **Task 2.2**  
 
+Create a docker-compose.yml and use it to start the service so that you can use it with your browser.  
+
+[docker-compose.yml](./2.2/docker-compose.yml)   
 ____________________________________
 
 **Task 2.3**  
