@@ -1,0 +1,19 @@
+version: '3.5'  
+
+services: 
+    frontend:
+      container_name: frontend_2.3
+      image: devops-fe
+      ports: 
+        - 5000:5000
+      environment:
+        - API_URL=http://localhost:8000
+    backend:
+      container_name: backend_2.3
+      image: devops-be
+      ports:
+        - 8000:8000
+      volumes:
+        - .\logs.txt:/backend/logs.txt
+      environment: 
+        - FRONT_URL=http://localhost:5000
