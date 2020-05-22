@@ -27,7 +27,8 @@ ____________________________________
 
 Two containers seems to be enough what it comes to scaling up
 
-I used docker-compose command seen below
+I used docker-compose command seen below  
+
 `docker-compose up -d --scale compute=2`
 
 ____________________________________
