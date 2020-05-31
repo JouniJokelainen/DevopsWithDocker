@@ -1,0 +1,23 @@
+version: '3.5'  
+
+services: 
+    frontend:
+      container_name: frontend_2.5
+      image: part2_frontend
+      ports: 
+        - 5000:5000
+      environment:
+        - API_URL=http://localhost:8000
+    backend:
+      container_name: backend_2.5
+      image: part2_backend
+      ports:
+        - 8000:8000
+      volumes:
+        - .\logs.txt:/backend/logs.txt
+      environment: 
+        - FRONT_URL=http://localhost:5000
+        - REDIS=redis
+        - REDIS_PORT=6379
+    redis:
+      image: "redis:alpine"
