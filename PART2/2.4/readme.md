@@ -6,5 +6,5 @@ Seems that 2 instances of loadbalancer is enough to achieve the goal to get the 
 
 `docker-compose up -d --scale compute=2`  
 
-[docker-compose.yml](./2.4/docker-compose.yml)  
+[docker-compose.yml](./docker-compose.yml)  
 
