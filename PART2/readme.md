@@ -29,11 +29,20 @@ Two containers seems to be enough what it comes to scaling up
 
 I used docker-compose command seen below  
 
-`docker-compose up -d --scale compute=2`
+`docker-compose up -d --scale compute=2`  
+
+[docker-compose.yml](./2.4/docker-compose.yml)
 
 ____________________________________
 
 **Task 2.5**  
+
+Configure a redis container to cache information for the backend  
+
+[docker-compose.yml](./2.5/docker-compose.yml)  
+
+
+
 
 ____________________________________
 
