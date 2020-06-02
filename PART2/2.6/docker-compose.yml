@@ -1,0 +1,37 @@
+version: '3.5'  
+
+services: 
+    postgres:
+      image: postgres:latest
+      restart: always
+      environment: 
+        - POSTGRES_USER=dbuser
+        - POSTGRES_PASSWORD=password
+        - POSTGRES_DB=backenddb
+      ports:
+      - 5432:5432
+    frontend:
+      container_name: frontend_2.6
+      image: part2_frontend
+      ports: 
+        - 5000:5000
+      environment:
+        - API_URL=http://localhost:8000
+    backend:
+      container_name: backend_2.6
+      image: part2_backend
+      ports:
+        - 8000:8000
+      volumes:
+        - .\logs.txt:/backend/logs.txt
+      environment: 
+        - FRONT_URL=http://localhost:5000
+        - REDIS=redis
+        - REDIS_PORT=6379
+        - DB_USERNAME=dbuser
+        - DB_PASSWORD=password
+        - DB_NAME=backenddb
+        - DB_HOST=postgres
+      restart: unless-stopped
+    redis:
+      image: "redis:alpine"
