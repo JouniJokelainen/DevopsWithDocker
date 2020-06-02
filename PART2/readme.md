@@ -41,14 +41,13 @@ Configure a redis container to cache information for the backend
 
 [docker-compose.yml](./2.5/docker-compose.yml)  
 
-
-
-
 ____________________________________
 
 **Task 2.6**
 
+Configure backend to use Postgres database
 
+[docker-compose.yml](./2.6/docker-compose.yml)  
 ____________________________________
 
 **Task 2.7**  
