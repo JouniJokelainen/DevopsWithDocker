@@ -52,7 +52,9 @@ ____________________________________
 
 **Task 2.7**  
 
+Configure machine learning project (is it cucumber or moped)
 
+[docker-compose.yml](./2.7/docker-compose.yml)  
 ____________________________________
 
 **Task 2.8**  
