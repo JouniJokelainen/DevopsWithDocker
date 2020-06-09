@@ -59,6 +59,11 @@ ____________________________________
 
 **Task 2.8**  
 
+Configure Frontend-Backend to use Nginx reverse proxy
+
+[docker-compose.yml](./2.8/docker-compose.yml) 
+[docker-compose.yml](./2.8/nginx.conf) 
+
 ____________________________________
 
 **Task 2.9**  
