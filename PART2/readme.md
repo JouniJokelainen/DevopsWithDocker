@@ -62,7 +62,8 @@ ____________________________________
 Configure Frontend-Backend to use Nginx reverse proxy
 
 [docker-compose.yml](./2.8/docker-compose.yml) 
-[docker-compose.yml](./2.8/nginx.conf) 
+
+[nginx.conf](./2.8/nginx.conf) 
 
 ____________________________________
 
