@@ -84,7 +84,4 @@ Images were rebuilt through docker-compose.
 
 [frontend dockerfile](./2.10/dockerfile/frontend/dockerfile)  
 
-
-____________________________________
-
-**Task 2.11**  
+ 
