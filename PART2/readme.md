@@ -71,7 +71,7 @@ ____________________________________
 
 At this time i needed to switch to Ubuntu on VirtualBox because Postgres persistent volumes caused problems with directory rights on Windows.
 
-[docker-compose.yml](./2.9/docker-compose.yml) 
+[docker-compose.yaml](./2.9/docker-compose.yaml) 
 ____________________________________
 
 **Task 2.10**  
