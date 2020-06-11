@@ -1,0 +1,47 @@
+version: '3.5'
+
+services: 
+    nginx: 
+      image: nginx:latest
+      container_name: nginxproxy
+      ports:
+        - 80:80
+      volumes:
+        - ./nginx.conf:/etc/nginx/nginx.conf
+    postgres:
+      container_name: postgress
+      image: postgres:latest
+      restart: always
+      environment: 
+        - POSTGRES_USER=dbuser
+        - POSTGRES_PASSWORD=password
+        - POSTGRES_DB=backenddb
+      ports:
+      - 5432:5432
+      volumes:
+        - ./database:/var/lib/postgresql/data
+    frontend:
+      container_name: p2frontend
+      image: part2_frontend
+      ports: 
+        - 5000:5000
+    backend:
+      container_name: p2backend
+      image: part2_backend
+      ports:
+        - 8000:8000
+      volumes:
+        - ./logs.txt:/backend/logs.txt
+      environment: 
+        - REDIS=redis
+        - REDIS_PORT=6379
+        - DB_USERNAME=dbuser
+        - DB_PASSWORD=password
+        - DB_NAME=backenddb
+        - DB_HOST=postgres
+    redis:
+      container_name: redis
+      image: redis:alpine
+      restart: unless-stopped
+volumes:
+  database:
