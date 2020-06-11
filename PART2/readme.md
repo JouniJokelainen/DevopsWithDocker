@@ -74,7 +74,7 @@ ____________________________________
 **Task 2.10**  
 
 Some buttons may have stopped working in the frontend + backend project. Make sure that every button for exercises works.  
-Enviroment variables removed from backend dockerfile (_ENV API_URL=http://localhost:8000_) and frontend dockerfile (_ENV FRONT_URL=http://localhost:5000_).   
+Enviroment variables were removed from backend dockerfile (_ENV API_URL=http://localhost:8000_) and frontend dockerfile (_ENV FRONT_URL=http://localhost:5000_).   
 
 Images were rebuiled through docker-compose.  
 
