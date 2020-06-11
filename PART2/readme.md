@@ -82,6 +82,10 @@ Images were rebuiled through docker-compose.
 
 [nginx.conf](./2.10/nginx.conf) 
 
+[backend dockerfile](./2.10/dockerfile/backend/dockerfile)  
+
+[frontend dockerfile](./2.10/dockerfile/frontend/dockerfile)  
+
 
 ____________________________________
 
