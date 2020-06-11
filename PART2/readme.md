@@ -73,6 +73,13 @@ ____________________________________
 
 **Task 2.10**  
 
+Some buttons may have stopped working in the frontend + backend project. Make sure that every button for exercises works.  
+
+[docker-compose.yml](./2.10/docker-compose.yml) 
+
+[nginx.conf](./2.10/nginx.conf) 
+
+
 ____________________________________
 
 **Task 2.11**  
