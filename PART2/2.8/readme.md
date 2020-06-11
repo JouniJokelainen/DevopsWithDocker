@@ -1,5 +1,5 @@
 ## Task 2.8  
 
-Some buttons may have stopped working in the frontend + backend project. Make sure that every button for exercises works.  
+Task is to configure machine learning project (cucumber or moped)
 
 [docker-compose.yml](./docker-compose.yml)  
