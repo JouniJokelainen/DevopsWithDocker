@@ -136,10 +136,10 @@ https://hub.docker.com/r/jounijokelainen/wikiapp
 
 Usage  
 Start container using command  
-`docker run --name wikiapp -it --rm wikiapp *criteria*` 
+`docker run -it --rm wikiapp *criteria*` 
 
 Usage example  
-eg. `docker run --name wikiapp -it --rm ilosaarirock`  
+eg. `docker run -it --rm wikiapp ilosaarirock`  
 
 [dockerfile](./1.15/dockerfile)  
 [wikiapp](./1.13/wikiapp.zip)  
