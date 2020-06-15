@@ -1,0 +1,31 @@
+# Base image
+FROM ubuntu:16.04
+
+# Set working directory
+WORKDIR /frontend
+
+# Copy project file to working directory
+COPY ./frontend-example-docker-master /frontend
+
+# Do update, install curl, node and dependencies
+# Define packages not to be auto removed with purge and do purge
+RUN apt-get update && apt-get install curl -y \ 
+&& curl -sL https://deb.nodesource.com/setup_10.x | bash && apt-get update \ 
+&& apt-get install -y nodejs \ 
+&& npm install \
+&& apt-mark manual libpython2.7-minimal \
+&& apt-mark manual nodejs \
+&& apt-mark manual python2.7-minimal \
+&& apt-mark manual openssl \
+&& apt-get purge -y --auto-remove python2.7 \
+&& apt-get purge -y --auto-remove curl \
+&& rm -rf /var/lib/apt/lists/*
+
+# Expose port 5000
+EXPOSE 5000
+
+# Set API_URL enviroment variable
+ENV API_URL=http://localhost:8000
+
+# Build and server in production mode in folder /dist
+CMD npm start
