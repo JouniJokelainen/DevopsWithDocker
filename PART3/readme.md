@@ -5,12 +5,12 @@
 I orginally built both images using node as base image. Becouse images seemed to be was huge, i wanted to test with Ubuntu:16.04.  
 
 Image sizes before optimization  
-_Frontend: 517 MB_
-_Backend:  336 MB_
+_Frontend: 517 MB_  
+_Backend:  336 MB_  
 
 Image sizes after optimization  
-_Frontend: 486 MB_
-_Backend:  307 MB_
+_Frontend: 486 MB_  
+_Backend:  307 MB_  
 
 
 Optimized dockerfiles  
