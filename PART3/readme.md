@@ -2,6 +2,8 @@
 
 **Task 3.1**
 
+Image sizes. Return back to our frontend & backend Dockerfiles and you should see the some mistakes we now know to fix.
+
 I orginally built both images using node as base image. Becouse images seemed to be was huge, i wanted to test with Ubuntu:16.04.  
 
 Image sizes before optimization  
@@ -20,6 +22,8 @@ Optimized dockerfiles
 ____________________________________
 
 **Task 3.2**  
+
+Create deployment pipeline
 
 I used edited course material as an web app in this task. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku). 
 
