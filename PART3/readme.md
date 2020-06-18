@@ -25,12 +25,21 @@ ____________________________________
 
 Create deployment pipeline
 
-I used edited course material as an web app in this task. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku). 
+For this task, I used edited course material as an web app. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku).  
+
+I also needed to create a [Procfile] (./3.2/Procfile) and place it in apps rootfolder. Procfile tells Heroku how to run the app after its deployed by Circleci pipeline. Procfile is configured as follows _web
+jekyll serve --no-watch --port $PORT --host 0.0.0.0_  
+I also needed to turn on Herokus _free dyno_ in apps _Overview_ tab so _Procfile_ is actually executed by Heroku.  
+
+I edited [_config.yml_](./3.2/config.yml) in _.circleci_ folder to use Circleci Heroku orb for deployint to Heroku.  
+
+Also i edited \__config.yml_ file by adding -vendor line as list line in file. (# Exclude from processing). I also changed some other setting in file like url setting (url: "https://devopstask32.herokuapp.com/") and email.
 
 Heroku app (edited cource material) can be found from url
 https://devopstask32.herokuapp.com/
 
-[docker-compose.yml](./3.2/docker-compose.yml)   
+   
+
 ____________________________________
 
 
