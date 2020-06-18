@@ -21,7 +21,7 @@ ____________________________________
 
 **Task 3.2**  
 
-I used edited course material as an web app for this task. Deployment pipeline was created with Circleci and its heroku orb. 
+I used edited course material as an web app in this task. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku). 
 
 Heroku app (edited cource material) can be found from url
 https://devopstask32.herokuapp.com/
