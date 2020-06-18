@@ -21,7 +21,15 @@ ____________________________________
 
 **Task 3.2**  
 
- 
+I used edited course material as an web app for this task. Deployment pipeline was created with Circleci and its heroku orb. 
+
+Heroku app (edited cource material) can be found from url
+https://devopstask32.herokuapp.com/
 
 [docker-compose.yml](./3.2/docker-compose.yml)   
 ____________________________________
+
+
+
+
+
