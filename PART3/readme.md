@@ -25,7 +25,7 @@ ____________________________________
 
 Create deployment pipeline  
 
-For this task, I used [course material](https://github.com/docker-hy/docker-hy.github.io) (_Jekyll website using Ruby_) as an web app. I forked it and cloned fork to my laptop. I edited text on first page a bit. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku).  
+For this task, I used [course material](https://github.com/docker-hy/docker-hy.github.io) (_Jekyll website using Ruby_) as an web app. I forked it and cloned fork to my laptop. I edited text on first page a bit. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku).  I needed to configure project settings by adding two enviroment variables: HEROKU_APP_NAME and HEROKU_APP_NAME. Value for first one is apps name in Heroku and value for second is Heroku accounts API key, which can be found from account settings - Account tab - API key.  
 
 I also needed to create a [Procfile](./3.2/Procfile) and place it in apps rootfolder. Procfile tells Heroku how to run the app after its deployed by Circleci pipeline. Procfile is configured as follows _web
 jekyll serve --no-watch --port $PORT --host 0.0.0.0_  
@@ -38,7 +38,7 @@ Also i edited \__config.yml_ file by adding -vendor line as list line in file. (
 Heroku app (edited course material) can be found from url
 https://devopstask32.herokuapp.com/  
 
-I used these instructions to setup app to Heroku.
+I used [these instructions](https://blog.gnclmorais.com/jekyll-heroku-the-simple-way) to setup app to Heroku. Instruction dont include Circleci deployment pipeline but 
 
    
 
