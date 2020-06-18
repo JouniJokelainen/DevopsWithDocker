@@ -23,11 +23,11 @@ ____________________________________
 
 **Task 3.2**  
 
-Create deployment pipeline
+Create deployment pipeline  
 
 For this task, I used edited course material as an web app. Deployment pipeline was created with _Circleci_ and its [Heroku orb](https://circleci.com/orbs/registry/orb/circleci/heroku).  
 
-I also needed to create a [Procfile] (./3.2/Procfile) and place it in apps rootfolder. Procfile tells Heroku how to run the app after its deployed by Circleci pipeline. Procfile is configured as follows _web
+I also needed to create a [Procfile](./3.2/Procfile) and place it in apps rootfolder. Procfile tells Heroku how to run the app after its deployed by Circleci pipeline. Procfile is configured as follows _web
 jekyll serve --no-watch --port $PORT --host 0.0.0.0_  
 I also needed to turn on Herokus _free dyno_ in apps _Overview_ tab so _Procfile_ is actually executed by Heroku.  
 
