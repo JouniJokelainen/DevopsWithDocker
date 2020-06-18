@@ -38,7 +38,7 @@ Also i edited \__config.yml_ file by adding -vendor line as list line in file. (
 Heroku app (edited course material) can be found from url
 https://devopstask32.herokuapp.com/  
 
-I used [these instructions](https://blog.gnclmorais.com/jekyll-heroku-the-simple-way) to setup app to Heroku. Instruction dont include Circleci deployment pipeline but 
+I used [these instructions](https://blog.gnclmorais.com/jekyll-heroku-the-simple-way) to setup app to Heroku. Instruction dont include Circleci deployment pipeline but it was not a biggie ...at least when using ready made orb for [Heroku](https://circleci.com/orbs/registry/orb/circleci/heroku)
 
    
 
