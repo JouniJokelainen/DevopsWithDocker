@@ -45,6 +45,15 @@ I used [these instructions](https://blog.gnclmorais.com/jekyll-heroku-the-simple
 ____________________________________
 
 
+**Task 3.3**  
 
+Since im not a developer all i could produce was a simple .sh script (_imagefactory.sh_). Its for building images inside container.   
+[imagefactory.sh](./3.3/imagefactory.sh)  
+
+Container that runs imagefactory.sh script is built using dockerfile below. Dockerfile creates an image FROM Ubuntu:18.04 and instals git and Docker to it. _Imagefactory.sh_ script is defined as entrypoint in deckerfile above so it starts right away.  
+[dockerfile for building "imagefactory" image](./3.3/dockerfile)   
+
+Container running the script is created using command:  
+`docker run --name *containername* --rm -v /var/run/docker.sock:/var/run/docker.sock -it *imagename*`
 
 
