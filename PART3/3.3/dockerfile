@@ -1,0 +1,26 @@
+FROM ubuntu:18.04
+WORKDIR /usr/src/app
+COPY imagefactory.sh .
+
+# Update and install Git
+RUN apt-get update && apt-get install -y git-core
+
+# Do preconfig for Docker installation
+RUN apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+# Add Docker public key
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+
+# Configure repository to install Docker
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# Docker installation and and apt-get cleaning
+RUN apt-get install docker-ce docker-ce-cli containerd.io -y && apt-get clean
+
+# Setup a default command
+ENTRYPOINT ["/usr/src/app/imagefactory.sh"]
