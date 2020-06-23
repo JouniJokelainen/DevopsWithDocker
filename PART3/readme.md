@@ -59,12 +59,13 @@ Container running the script is started by following command:
 ____________________________________
 
 
-**Task 3.3**  
+**Task 3.4**  
 
 Make sure the containers start their processes as a non-root account.  
 
-I configured _frontend_ conainer to use user account named _app_. 
-[Frontend dockerfile](./3.4/dockerfile)  
+Frontend:  
+I configured _frontend_ conainer to use user account named _app_.  
+[Frontend dockerfile](./3.4/front/dockerfile)  
 
 Running `whoami` to check user account used for running container confirms that container uses _app_ account.
 
@@ -74,7 +75,13 @@ $ whoami
 app
 ````
 
+Backend:
 
 
+
+____________________________________
+
+
+**Task 3.5**  
 
 
