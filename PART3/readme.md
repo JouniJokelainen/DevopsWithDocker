@@ -97,11 +97,11 @@ ____________________________________
 Rather than going to FROM alpine or scratch, lets go look into docker-node and we should find a way how to run a container that has everything pre-installed for us.  
 I choose FROM node:alpine to base image for both dockerimages.  
 
-[Frontend dockerfile](./3.5/frontend/dockerfile) 
+[Frontend Alpine dockerfile](./3.5/frontend/dockerfile) 
 
-[Frontend dockerfile](./3.5/backend/dockerfile) 
+[Frontend Alpine dockerfile](./3.5/backend/dockerfile) 
 
-Image sizes before and after docker file changes from Ubuntu:16.04 to Node:alpine  
+Image sizes before and after docker file changes from _Ubuntu:16.04_ to _Node:alpine_  
 
 ````
 Ubuntu:
