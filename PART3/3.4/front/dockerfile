@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install curl -y \
 && apt-get purge -y --auto-remove curl \
 && rm -rf /var/lib/apt/lists/*
 
-# Add user account named app, change ownership of /frontend folder
+# Add user account named app and recursively change ownership of frontend folders and files
 # Swtch using app account
 RUN useradd -m app
 RUN chown -R app /frontend
