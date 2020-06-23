@@ -65,6 +65,7 @@ Make sure the containers start their processes as a non-root account.
 
 Frontend:  
 I configured _frontend_ container to use user account named _app_ in _dockerfile_.  
+
 [Frontend dockerfile](./3.4/front/dockerfile)  
 
 Running `whoami` to check user account used for running container confirms that container uses _app_ account.
