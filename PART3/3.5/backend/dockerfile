@@ -1,0 +1,28 @@
+# Base image
+FROM node:alpine
+
+# Set working directory
+WORKDIR /backend
+
+# Copy project file to working directory
+COPY ./backend-example-docker-master /backend
+
+# Do update, install node and dependencies
+# RUN apk update & npm install
+RUN apk update && npm install
+
+# Add user account named app without home directory
+# Recursively change ownership of /backend subfolders and files
+# Swtch using app account
+RUN adduser -S app
+RUN chown -R app /backend
+USER app
+
+# Expose port 8000
+EXPOSE 8000
+
+# Set FRONT_URL variable
+ENV FRONT_URL=http://localhost:5000
+
+# Build and server in production mode in folder /dist
+ENTRYPOINT npm start
