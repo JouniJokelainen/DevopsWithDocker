@@ -64,7 +64,7 @@ ____________________________________
 Make sure the containers start their processes as a non-root account.  
 
 Frontend:  
-I configured _frontend_ container to use user account named _app_.  
+I configured _frontend_ container to use user account named _app_ in _dockerfile_.  
 [Frontend dockerfile](./3.4/front/dockerfile)  
 
 Running `whoami` to check user account used for running container confirms that container uses _app_ account.
@@ -76,8 +76,13 @@ app
 ````
 
 Backend:  
-Also _Backend_ container is configured to use user account named _app_.  
+Also _Backend_ container is configured to use user account named _app_ in related _dockerfile_.  
 
+````
+PS C:\temp\DevOpswithDocker\part3\3.4\backend> docker exec -it back3.4 sh  
+$ whoami  
+app
+````
 
 [Backend dockerfile](./3.4/back/dockerfile)
 
