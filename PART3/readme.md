@@ -79,13 +79,13 @@ app
 Backend:  
 Also _Backend_ container is configured to use user account named _app_ in related _dockerfile_.  
 
+[Backend dockerfile](./3.4/back/dockerfile)  
+
 ````
 PS C:\temp\DevOpswithDocker\part3\3.4\backend> docker exec -it back3.4 sh  
 $ whoami  
 app
 ````
-
-[Backend dockerfile](./3.4/back/dockerfile)
 
 ____________________________________
 
