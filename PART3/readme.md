@@ -47,6 +47,8 @@ ____________________________________
 
 **Task 3.3**  
 
+Create a project that downloads a repository from github, builds a Dockerfile located in the root and then publishes it into Docker Hub. 
+
 Since im not a developer all i could produce was a simple .sh script (_imagefactory.sh_). Its for building images inside container.   
 [imagefactory.sh](./3.3/imagefactory.sh)  
 
