@@ -56,4 +56,25 @@ Container that runs imagefactory.sh script is built using dockerfile below. Dock
 Container running the script is started by following command:  
 `docker run --name *containername* --rm -v /var/run/docker.sock:/var/run/docker.sock -it *imagename*`
 
+____________________________________
+
+
+**Task 3.3**  
+
+Make sure the containers start their processes as a non-root account.  
+
+I configured _frontend_ conainer to use user account named _app_. 
+[Frontend dockerfile](./3.4/dockerfile)  
+
+Running `whoami` to check user account used for running container confirms that container uses _app_ account.
+
+````
+PS C:\temp\DevOpswithDocker\part3\3.4\frontend> docker exec -it front3.4 sh  
+$ whoami  
+app
+````
+
+
+
+
 
