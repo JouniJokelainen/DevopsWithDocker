@@ -99,7 +99,7 @@ I choose FROM node:alpine to base image for both dockerimages.
 
 [Frontend Alpine dockerfile](./3.5/frontend/dockerfile) 
 
-[Frontend Alpine dockerfile](./3.5/backend/dockerfile) 
+[Backend Alpine dockerfile](./3.5/backend/dockerfile) 
 
 Image sizes before and after docker file changes from _Ubuntu:16.04_ to _Node:alpine_  
 
