@@ -95,6 +95,7 @@ ____________________________________
 **Task 3.5**  
 
 Rather than going to FROM alpine or scratch, lets go look into docker-node and we should find a way how to run a container that has everything pre-installed for us.  
+
 I choose FROM node:alpine to base image for both dockerimages.  
 
 [Frontend Alpine dockerfile](./3.5/frontend/dockerfile) 
