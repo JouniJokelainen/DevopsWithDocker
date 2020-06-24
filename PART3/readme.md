@@ -114,5 +114,15 @@ frontend       522MB
 backend        176MB
 ````  
 
+____________________________________
+
+
+**Task 3.6**  
+
+Multi-stage builds. Lets do a multi-stage build for the frontend project since we’ve come so far with the application.  
+
+Multistage dockerfile gave additional 20 MB space saving in image file size. I couldnt figure out anything fancy relating multistaging.  
+
+[Multistage dockerfile for frontend](./3.5/frontend/dockerfile) 
 
 
