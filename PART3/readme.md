@@ -125,4 +125,7 @@ Multistage dockerfile gave additional 20 MB space saving in image file size. I c
 
 [Multistage dockerfile for frontend](./3.5/frontend/dockerfile) 
 
+____________________________________
 
+
+**Task 3.7** 
