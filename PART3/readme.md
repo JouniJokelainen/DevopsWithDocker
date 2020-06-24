@@ -129,3 +129,16 @@ ____________________________________
 
 
 **Task 3.7** 
+
+Do all or most of the optimizations from security to size for any other Dockerfile you have access to, in your own project or for example the ones used in previous “standalone” exercises. Please document Dockerfiles both before and after.  
+
+Multistage dockerfile was created for simple node web app.   
+[Simpleweb](./3.7/simpleweb)  
+
+[Multistage dockerfile for simpleweb](./3.7/dockerfile)  
+
+Unfortynately size optimazationd didnt work in this case :(
+simpleweb.3.7          120MB
+simpleweb.3.7.multi    120MB
+
+
