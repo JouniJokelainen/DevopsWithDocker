@@ -141,4 +141,14 @@ Unfortynately size optimazationd didnt work in this case :(
 simpleweb.3.7          120MB
 simpleweb.3.7.multi    120MB
 
+____________________________________
+
+
+**Task 3.8** 
+
+Familiarize yourself with Kubernetes terminology and draw a diagram. 
+
+Was not a very easy task because Kubernetes seems to be quite a big concept with lot of moving parts. I absolytely need to put more effort into it.
+
+[Diagram of Kubernetes](./3.5/frontend/3.8.png) 
 
