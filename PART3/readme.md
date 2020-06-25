@@ -150,5 +150,5 @@ Familiarize yourself with Kubernetes terminology and draw a diagram.
 
 Was not a very easy task because Kubernetes seems to be quite a big concept with lot of moving parts. I absolytely need to put more effort into it.
 
-[Diagram of Kubernetes](./3.5/frontend/3.8.png) 
+[Diagram of Kubernetes](./3.8/frontend/3.8.png) 
 
