@@ -123,7 +123,7 @@ Multi-stage builds. Lets do a multi-stage build for the frontend project since w
 
 Multistage dockerfile gave additional 20 MB space saving in image file size. I couldnt figure out anything fancy relating multistaging.  
 
-[Multistage dockerfile for frontend](./3.6/frontend/dockerfile) 
+[Multistage dockerfile for frontend](./3.6/dockerfile) 
 
 ____________________________________
 
