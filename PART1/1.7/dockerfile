@@ -17,4 +17,4 @@ copy curler.sh .
 RUN chmod +x curler.sh
 
 # Run curler.sh when container is started
-CMD ["./curler.sh"]
+CMD ["bash", "curler.sh"]
